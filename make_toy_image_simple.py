@@ -8,7 +8,7 @@ region that is 1 M thick, inclined at a 20 degree angle to the observer,
 emitting at a radius of 6 M, with a clockwise (negative) material rotation
 of beta=0.41, and purely vertical field would be given by
 
-im, coeffs, flipped_dividend = make_pol_toy(fov,npix,thickness_M,inc_dec,radius_M,beta,br,bphi,bz)
+im, coeffs, flipped_dividend = make_pol_toy(80*eh.RADPERUAS,160, 1,20,6,-0.41,0,0,1)
 """
 
 
