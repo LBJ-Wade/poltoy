@@ -70,6 +70,8 @@ def make_pol_toy(fov, npix, thickness_M,  inc_dec, radius_M, beta, br, bphi, bz,
     r, phi = emission_coordinates(rho, varphi)
 
     #begin Ramesh formalism - for details, see his notes
+    bx = br
+    by = bphi
     bmag = np.sqrt(bx**2 + by**2 + bz**2)
     gfac = np.sqrt(1. - 2./r)
     gfacinv = 1. / gfac
